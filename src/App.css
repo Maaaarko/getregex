@@ -1,38 +1,107 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.heading > p {
+    font-size: calc(4px + 2vmin);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading > h1 {
+    font-size: calc(20px + 2vmin);
+}
+
+.heading > h2 {
+    font-size: calc(16px + 2vmin);
+}
+
+.form-container {
+    flex: 1;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-row {
+    flex: 0.4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-start {
+    flex: 0.3;
+}
+
+.form-input {
+    margin-left: 5%;
+    flex: 0.7;
+    padding: 20px 10px;
+    line-height: 20px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #42434b;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255, 0.8);
+}
+
+.form-button {
+    flex: 0.2;
+    padding: 20px 10px;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    background-color: #42434b;
+    border: 0px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-button:hover {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.response {
+    margin: 5%;
+    padding: 20px 10px;
+    line-height: 20px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #42434b;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    color: #61dafb;
 }
