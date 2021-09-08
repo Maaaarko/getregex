@@ -14,7 +14,7 @@ const Form = ({ input, setInput, onSubmit }) => {
                     name="input"
                     label="input"
                     value={input}
-                    placeholder="type your query in natural language (ex. 'an email address')"
+                    placeholder="type your query in natural language (eg. 'an email address')"
                     onChange={onChange}
                 />
             </div>

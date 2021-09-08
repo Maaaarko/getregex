@@ -5,6 +5,7 @@ import Heading from "./components/Heading"
 import Response from "./components/Response"
 
 import OpenAI from "openai-api"
+import Footer from "./components/Footer"
 
 const API_KEY = process.env.REACT_APP_API_KEY
 console.log(API_KEY)
@@ -43,6 +44,7 @@ function App() {
                 <Heading />
                 <Form input={input} setInput={setInput} onSubmit={onSubmit} />
                 <Response response={response} setResponse={setResponse} />
+                <Footer />
             </div>
         </div>
     )
